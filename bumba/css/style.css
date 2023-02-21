@@ -140,6 +140,19 @@ main{
     position: relative;
     z-index: 0;
 }
+.menu-links{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #231F20;
+    z-index: 10;
+    display: none;
+}
 .banner-text{
     height: 100%;
     width: 100%;
