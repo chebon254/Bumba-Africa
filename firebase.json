@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "bumba",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
