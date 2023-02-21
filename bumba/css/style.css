@@ -288,6 +288,74 @@ section.about img{
     font-family: Gotham-Medium;
     margin: 20px 0px 0px;
 }
+section.team{
+    width: 100%;
+}
+.team-container{
+    padding: 40px 0px 60px;
+}
+.team-head{
+    padding: 10px;
+}
+.team-head h1{
+    font-size: 52px;
+    line-height: 50px;
+    color: #231F20;
+    font-family: Gotham-Book;
+    text-align: center;
+}
+.team-members{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.member{
+    height: fit-content;
+    width: 100%;
+    min-width: 280px;
+    max-width: 320px;
+    margin: 10px 10px;
+}
+.member img{
+    width: 100%;
+}
+.member-info{
+    padding: 14px 10px;
+}
+.member-info h4{
+    text-align: center;
+    font-size: 20px;
+    line-height: 24px;
+    color: #231F20;
+    font-family: Gotham-Medium;
+}
+.member-info p{
+    text-align: center;
+    font-size: 16px;
+    line-height: 15px;
+    color: #ED1D24;
+    font-family: Gotham-Book;
+}
+section.team .meet{
+    padding: 20px 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+section.team .meet button{
+    width: 200px;
+    height: 50px;
+    background: #F7941E;
+    border: 1px solid #F2F2F2;
+    box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.016);
+    border-radius: 8px;
+    outline: none;
+    color: #231F20;
+    font-size: 16px;
+    font-family: Gotham-Medium;
+    margin: 20px auto 0px;
+}
+
 footer{
     padding: 40px 0px 80px;
     background-color: #F7941E;
