@@ -4,6 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="css/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="css/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="194x194" href="css/favicon/favicon-194x194.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="css/favicon/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="css/favicon/favicon-16x16.png">
+    <link rel="manifest" href="css/favicon/site.webmanifest">
+    <link rel="mask-icon" href="css/favicon/safari-pinned-tab.svg" color="#f7941e">
+    <link rel="shortcut icon" href="css/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-config" content="css/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
     <title>Bumba Africa</title>
 
     <link rel="stylesheet" href="css/style.css">
@@ -23,7 +35,7 @@
         }
     </style>
 </head>
-<body>
+<body onload="onload();">
     <main>
         <section class="banner">
             <div class="menu-links" id="MenuOverlay">
@@ -70,12 +82,12 @@
                     </div>
                 </div>
                 <div class="right">
-                    <a href="contact.html">Contact US</a>
+                    <a href="#contact">Contact US</a>
                     <button><i class="fa-solid fa-magnifying-glass"></i></button>
                 </div>
             </nav>
             <div class="banner-image">
-                <img src="css/img/eye 1.png" alt="Eye">
+                <img src="css/img/eye 1.png" id="ban-image" alt="Eye">
                 <div class="image-mask"></div>
             </div>
             <div class="banner-text">
@@ -87,15 +99,18 @@
                     <button>Get Started</button>
                 </div>
             </div>
+            <div class="rectangle" id="ban-rect">
+
+            </div>
         </section>  
         <section class="projects">
-            <img src="css/img/Mask group.png" alt="Bumba Partterns" width="100%">
+            <img class="reveal-fixed" src="css/img/Mask group.png" alt="Bumba Partterns" width="100%">
             <div class="projects-container container">
                 <div class="left">
                     <h2>OUR <br> PROJECTS</h2>
                     <p>Lorem ipsum dolor sit amet consectetur. Augue lacus faucibus dolor nulla at a. Pellentesque sapien porta sed aliquam erat quis ullamcorper. Adipiscing hendrerit ultrices pharetra sed nibh gravida. Platea sapien malesuada vitae viverra quis ultrices neque dignissim.
                         Morbi odio pharetra pellentesque risus sed. Imperdiet et venenatis dolor pharetra non. Vel tellus id amet eget convallis vestibulum imperdiet.</p>
-                    <button>See More</button>
+                    <button onclick="location.href='services.html'">See More</button>
                 </div>
                 <div class="right">
                     <img src="css/img/Ice cream smoke.png" alt="Smoke ice scream">
@@ -112,7 +127,7 @@
                     <h2>About Us</h2>
                     <p>Lorem ipsum dolor sit amet consectetur. Augue lacus faucibus dolor nulla at a. Pellentesque sapien porta sed aliquam erat quis ullamcorper. Adipiscing hendrerit ultrices pharetra sed nibh gravida. Platea sapien malesuada vitae viverra quis ultrices neque dignissim.
                         Morbi odio pharetra pellentesque risus sed. Imperdiet et venenatis dolor pharetra non. Vel tellus id amet eget convallis vestibulum imperdiet.</p>
-                    <button>See More</button>
+                    <button onclick="location.href='aboutus.html'">Read More</button>
                 </div>
             </div>
             <img src="css/img/Mask group.png" alt="Bumba Partterns" width="100%" style="margin: 40px 0px 0px;">
@@ -146,7 +161,7 @@
                     </div>
                 </div>
                 <div class="meet">
-                    <button>Meet Team</button>
+                    <button id="contact" onclick="location.href='services.html'">Meet Team</button>
                 </div>
             </div>
         </section>

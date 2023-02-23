@@ -4,7 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bumba Africa</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="css/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="css/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="194x194" href="css/favicon/favicon-194x194.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="css/favicon/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="css/favicon/favicon-16x16.png">
+    <link rel="manifest" href="css/favicon/site.webmanifest">
+    <link rel="mask-icon" href="css/favicon/safari-pinned-tab.svg" color="#f7941e">
+    <link rel="shortcut icon" href="css/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-config" content="css/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <title>Bumba Africa - Blog Content</title>
 
     <link rel="stylesheet" href="css/style.css">
 
@@ -336,6 +348,15 @@
     </footer>
 
     <script>
+        /* === Overlay === */
+            function openContact() {
+                document.getElementById("MenuOverlay").style.width = "100%";
+            }
+
+            function closeContact() {
+                document.getElementById("MenuOverlay").style.width = "0%";
+            }
+        /* === Overlay === */
         /* == Stories == */
             var slideIndex = 1;
                     showSlides(slideIndex);

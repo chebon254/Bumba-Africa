@@ -42,7 +42,7 @@ body{
 }
 .reveal-fixed{
     transition: 2s all ease;
-    animation: bottomReveal 2000ms forwards;
+    animation: bottomReveal 600ms forwards;
 }
 .reveal-fixed-delay{
     transition: 2s all ease;
@@ -139,13 +139,23 @@ main{
 .menu-links{
     position: fixed;
     top: 0;
-    left: 0;
+    right: 0;
     height: 100vh;
-    width: 100vw;
+    width: 0px;
     background-color: #231F20;
     z-index: 20;
-    display: none;
-    transition: all ease 1600ms;
+    transition: all ease 500ms;
+    animation: left_reveal 500ms forwards;
+}
+@keyframes left_reveal {
+    from{
+        transform: translateX(-100%) !important;
+        opacity: 0;
+    }
+    to{
+        transform: translateX(100%) !important;
+        opacity: 1;
+    }
 }
 .menu-hold{
     height: 100%;
@@ -197,9 +207,18 @@ main{
     border: 0px;
 }
 .banner{
-    height: 700px;
+    height: 720px;
     position: relative;
     background-color: #F7941E;
+}
+.banner .rectangle{
+    height: 160px;
+    width: 350px;
+    background-color: #ffffff99;
+    position: absolute;
+    bottom: -160px;
+    right: 0px;
+    transition: all ease 600ms;
 }
 .banner-text{
     height: 100%;
@@ -210,17 +229,18 @@ main{
     position: absolute;
     right: 0px !important;
     top: 0 !important;
-    height: 720px;
+    height: 620px;
     width: 725px;
     z-index: 0;
 }
 .banner-image img{
-    height: 720px !important;
+    height: 580px;
     width: 725px !important;
     position: absolute;
     top: 0;
     left: 0;   
     z-index: 2;
+    transition: all ease 600ms;
 }
 .banner-image .image-mask{
     height: 720px !important;
@@ -780,9 +800,6 @@ section.portfolio .row .huge-pic-two img{
     text-decoration: none;
     padding: 14px 0px;
 }
-.blog .blog-info a:nth-child(2):hover{
-    color: #ED1D24;
-}
 .blog .blog-info p:nth-child(3){
     font-family: Gotham-Book;
     font-size: 20px;
@@ -813,6 +830,7 @@ section.portfolio .row .huge-pic-two img{
     transition: all 500ms;
     height: 50px;
     width: 50px;
+    margin: 2px;
     color: #ffffff;
     display: flex;
     align-items: center;
@@ -992,6 +1010,7 @@ main.blog-content .banner{
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    margin: 2px;
 }
 .stories-pagination .number span{
     font-family: Gotham-Book;

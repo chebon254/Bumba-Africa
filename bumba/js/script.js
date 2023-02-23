@@ -1,10 +1,17 @@
+// Homepage Animation
+function onload() {
+    document.getElementById("ban-image").style.height = "720px";
+    document.getElementById("ban-rect").style.width = "0px";
+}
 /* === Overlay === */
 function openContact() {
-    document.getElementById("MenuOverlay").style.display = "block";
+    document.getElementById("MenuOverlay").style.width = "100%";
+    document.getElementById("ban-image").style.height = "620px";
 }
 
 function closeContact() {
-    document.getElementById("MenuOverlay").style.display = "none";
+    document.getElementById("MenuOverlay").style.width = "0%";
+    document.getElementById("ban-image").style.height = "720px";
 }
 /* === Overlay === */
 
