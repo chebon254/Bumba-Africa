@@ -455,8 +455,12 @@ section.team .meet button{
     font-family: Gotham-Medium;
     margin: 20px auto 0px;
 }
-
 footer{
+    height: fit-content;
+}
+footer .footer{
+    height: fit-content;
+    width: 100%;
     padding: 40px 0px 80px;
     background-color: #F7941E;
     background-image: url('img/footer\ background.png');
@@ -494,7 +498,17 @@ footer .footer-links{
     font-size: 20px;
     line-height: 20px;
 }
-
+.footer-copyright{
+    background-color: #231F20;
+    padding: 28px;
+}
+.footer-copyright p{
+    font-family: Gotham-Book;
+    text-align: center;
+    font-size: 12px;
+    line-height: 12px;
+    color: #FFFFFF;
+}
 
 
 
@@ -543,7 +557,7 @@ section.banner.about .banner-image .image-mask{
 }
 section.banner.about .banner-text-container{
     height: 482px;
-    padding: 180px 0px 20px;
+    padding: 220px 0px 20px;
     position: relative;
     z-index: 10;
 }
@@ -606,9 +620,6 @@ section.branding img{
 
 
 /* === Services Page == */
-.services-container{
-
-}
 .services-container .row{
     display: flex;
     align-items: center;
@@ -650,3 +661,173 @@ section.branding img{
     margin: 20px 20px;
 }
 /* === || Services Page == */
+
+
+
+
+
+
+/* === Portfolio Page == */
+section.portfolio .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+section.portfolio .row .huge-pic{
+    width: fit-content !important;
+    padding: 10px;
+}
+section.portfolio .row .huge-pic{
+    width: fit-content !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+section.portfolio .row .huge-pic img{
+    height: 380px;
+}
+section.portfolio .row .small-pics{
+    width: fit-content !important;
+    padding: 10px;
+}
+section.portfolio .row .small-pics .top,
+section.portfolio .row .small-pics .bottom{
+    width: fit-content !important;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+section.portfolio .row .small-pics .top img,
+section.portfolio .row .small-pics .bottom img{
+    width: 280px;
+    margin: 10px;
+}
+section.portfolio .row .small-pics-two{
+    width: 320px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+section.portfolio .row .small-pics-two img{
+    width: 280px;
+    margin: 10px;
+}
+section.portfolio .row .huge-pic-two{
+    width: 840px;
+}
+section.portfolio .row .huge-pic-two img{
+    height: 380px;
+}
+/* === || Portfolio Page == */
+
+
+
+
+/* === Blog Page == */
+.blog-container{
+    height: fit-content;
+    padding: 80px;
+    position: relative;
+}
+.blog-container img.stars{
+    position: absolute;
+    bottom: -32px;
+    left: -60px;
+    width: 200px !important;
+}
+.blogs{
+    display: none;
+}
+.blogs-content{
+    height: fit-content;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+.blog.blog-one{
+    height: fit-content;
+    padding: 10px;
+}
+.blog.blog-one img{
+    width: 100%;
+    max-width: 320px;
+    min-width: 280px;
+}
+.blog.blog-info{
+    padding: 10px 0px;
+}
+.blog .blog-info .headline{
+    width: fit-content;
+    padding: 5px 10px 5px 0px;
+    border-bottom: 1px solid red;
+    margin: 0px 0px 16px;
+}
+.blog .blog-info .headline p{
+    font-family: Gotham-Book;
+    font-size: 20px;
+    line-height: 32px;
+    color: #ED1D24;
+}
+.blog .blog-info a:nth-child(2){
+    font-family: Gotham-Book;
+    font-size: 20px;
+    line-height: 32px;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 14px 0px;
+}
+.blog .blog-info a:nth-child(2):hover{
+    color: #ED1D24;
+}
+.blog .blog-info p:nth-child(3){
+    font-family: Gotham-Book;
+    font-size: 20px;
+    line-height: 32px;
+    color: #828282;
+    margin: 16px 0px 10px;
+}
+.blog.blog-two{
+    height: fit-content;
+    padding: 10px;
+}
+.blog.blog-two img{
+    width: 100% !important;
+    max-width: 700px;
+    min-width: 280px;
+}
+.pagination{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+.pagination .number.active,
+.pagination .number:hover{
+    background: #000000;
+}
+.pagination .number{
+    transition: all 500ms;
+    height: 50px;
+    width: 50px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.pagination .number span{
+    font-family: Gotham-Book;
+    font-size: 20px;
+    line-height: 32px;
+    color: #ffffff;
+}
+/* === || Blog Page == */
+
+/* === Blog Content Page == */
+
+/* === || Blog Content Page == */
+
