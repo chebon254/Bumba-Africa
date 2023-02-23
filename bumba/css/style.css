@@ -742,6 +742,149 @@ section.portfolio .row .huge-pic-two{
 section.portfolio .row .huge-pic-two img{
     height: 380px;
 }
+section.portfolio .twafane .text p{
+    font-family: Gotham-Book;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    color: #231F20;
+    margin: 10px;
+}
+section.portfolio .twafane{
+    padding: 20px 0px;
+}
+
+#skin-sensation{
+    padding: 20px;
+}
+#skin-sensation .angry-grid {
+    display: grid; 
+ 
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    
+    gap: 10px;
+    height: 100%;
+    
+ }
+   
+ #item-0-skin {
+ 
+    background-color: #ffffff; 
+    grid-row-start: 1;
+    grid-column-start: 1;
+ 
+    grid-row-end: 2;
+    grid-column-end: 2;
+    
+ }
+ #item-1-skin {
+ 
+    background-color: #ffffff; 
+    grid-row-start: 2;
+    grid-column-start: 1;
+ 
+    grid-row-end: 3;
+    grid-column-end: 2;
+    
+ }
+ #item-1-skin img{
+    margin-top: 21px;
+ }
+ #item-2-skin {
+ 
+    background-color: #ffffff; 
+    grid-row-start: 1;
+    grid-column-start: 2;
+ 
+    grid-row-end: 3;
+    grid-column-end: 5;
+    
+ }
+ #item-2-skin img{
+    margin-left: 17px;
+    margin-top: 10px;
+ }
+
+#twafane{
+    padding: 20px;
+}
+#twafane .angry-grid {
+    display: grid; 
+ 
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    
+    gap: 10px;
+    height: 100%;
+    
+ }
+ #item-0 {
+ 
+    background-color: #ffffff; 
+    grid-row-start: 1;
+    grid-column-start: 1;
+ 
+    grid-row-end: 2;
+    grid-column-end: 2;
+    
+ }
+ #item-1 {
+ 
+    background-color: #ffffff; 
+    grid-row-start: 2;
+    grid-column-start: 1;
+ 
+    grid-row-end: 3;
+    grid-column-end: 2;
+    
+ }
+ #item-1 img{
+    margin: 18px 0px 0px;
+ }
+ #item-2 {
+ 
+    background-color: #ffffff; 
+    grid-row-start: 1;
+    grid-column-start: 2;
+ 
+    grid-row-end: 3;
+    grid-column-end: 4;
+    
+ }
+ #item-3 {
+ 
+    background-color: #ffffff; 
+    grid-row-start: 1;
+    grid-column-start: 4;
+ 
+    grid-row-end: 2;
+    grid-column-end: 5;
+    
+ }
+ #item-4 {
+ 
+    background-color: #ffffff; 
+    grid-row-start: 2;
+    grid-column-start: 4;
+ 
+    grid-row-end: 3;
+    grid-column-end: 5;
+    
+ }
+ #item-4  img{
+    margin: 15px 0px 0px 0px;
+ }
+ #tttext p{
+    font-family: Gotham-Book;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    color: #231F20;
+    margin: 10px;
+}
 /* === || Portfolio Page == */
 
 
