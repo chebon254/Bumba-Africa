@@ -276,8 +276,6 @@ main{
     outline: none;
 }
 section.projects{
-    position: relative;
-    z-index: 0;
     background-color: #231F20;
     padding: 20px 0px 10px;
 }
@@ -550,8 +548,6 @@ section.banner.about .banner-text-container{
     z-index: 10;
 }
 section.branding{
-    position: relative;
-    z-index: 0;
     background-color: #231F20;
     padding: 20px 0px 10px;
 }
@@ -600,3 +596,57 @@ section.branding img{
     text-align: left !important;
 }
 /* === || ABout Page == */
+
+
+
+
+
+
+
+
+
+/* === Services Page == */
+.services-container{
+
+}
+.services-container .row{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 20px 0px;
+}
+.services-container .row .column h1{
+    font-family: Gotham-Medium;
+    font-weight: 400;
+    font-size: 52px;
+    line-height: 52px;
+    color: #FFFFFF;
+}
+.services-container .row .column p{
+    font-family: Gotham-Medium;
+    font-size: 52px;
+    line-height: 52px;
+    color: #FFFFFF;
+}
+.services-container .row .column ul{
+    margin-left: 20px;
+}
+.services-container .row .column ul li{
+    font-family: Gotham-Book;
+    font-size: 20px;
+    line-height: 32px;
+    text-align: justify;
+    padding: 5px 10px;
+    color: #ffffff;
+    text-transform: capitalize;
+    list-style: disc !important;
+}
+.services-container .row .column{
+    height: fit-content;
+    width: 100%;
+    max-width: 460px;
+    min-width: 280px;
+    margin: 20px 20px;
+}
+/* === || Services Page == */
