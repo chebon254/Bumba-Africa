@@ -209,15 +209,10 @@ main{
 .banner-image{
     position: absolute;
     right: 0px !important;
-<<<<<<< HEAD
-    top: 0px;
-    height: 700px;
-=======
     top: 0 !important;
     height: 720px;
     width: 725px;
     z-index: 0;
->>>>>>> 7f0f1e3 (New Code Changes)
 }
 .banner-image img{
     height: 720px !important;
