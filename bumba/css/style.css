@@ -136,11 +136,6 @@ main{
     height: fit-content;
     width: 100%;
 }
-.banner{
-    height: 700px;
-    position: relative;
-    background-color: #F7941E;
-}
 .menu-links{
     position: fixed;
     top: 0;
@@ -200,6 +195,11 @@ main{
     background-color: #00000000;
     outline: none;
     border: 0px;
+}
+.banner{
+    height: 700px;
+    position: relative;
+    background-color: #F7941E;
 }
 .banner-text{
     height: 100%;
@@ -501,6 +501,101 @@ footer .footer-links{
 
 
 /* === ABout Page == */
+section.banner.about{
+    height: 482px ;
+    position: relative;
+    background-color: #F7941E;
+}
+section.banner.about .banner-text{
+    height: 482px;
+    width: 100%;
+    background-color: #F7941E;
+}
+section.banner.about .banner-image{
+    position: absolute;
+    right: 0px !important;
+    top: 0 !important;
+    height: 482px;
+    width: 487px;
+    z-index: 0;
+}
+section.banner.about .banner-image img{
+    height: 482px !important;
+    width: 487px !important;
+    position: absolute;
+    top: 0;
+    left: 0;   
+    z-index: 2;
+}
+section.banner.about .banner-image .image-mask{
+    height: 482px !important;
+    width: 487px !important;
+    background: linear-gradient(90deg, 
+    rgb(247, 148, 30) 15%, 
+    rgba(247, 148, 30, 0.89) 30%, 
+    rgba(247, 148, 30, 0.55) 40%, 
+    rgba(247, 148, 30, 0) 80%,
+    rgba(247, 148, 30, 0.55) 92%,
+    rgba(247, 148, 30, 0.89) 97%,
+    rgb(247, 148, 30) 100% );
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+}
+section.banner.about .banner-text-container{
+    height: 482px;
+    padding: 180px 0px 20px;
+    position: relative;
+    z-index: 10;
+}
+section.branding{
+    position: relative;
+    z-index: 0;
+    background-color: #231F20;
+    padding: 20px 0px 10px;
+}
+section.branding img{
+    width: 100% !important;
+}
+.branding-container{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    padding: 40px 0px;
+}
+.branding-container .left{
+    height: fit-content;
+    min-height: 400px;
+    padding: 20px 0px;
+}
+.branding-container .left h1{
+    font-size: 52px;
+    line-height: 52px;
+    font-family: Gotham-Book;
+    color: #FFFFFF;
+}
+.branding-container .left h1 strong{
+    font-family: Gotham-Medium;
+}
+.branding-container .right{
+    height: fit-content;
+    min-height: 400px;
+    padding: 20px 0px;
+}
+.branding-container .right p{
+    margin: 0px 0px 20px;
+    font-family: Gotham-Book;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    text-align: justify;
+    color: #ffffff;
+    width: 100%;
+    max-width: 620px;
+    min-width: 280px;
+}
 .team-head h1{
     text-align: left !important;
 }
