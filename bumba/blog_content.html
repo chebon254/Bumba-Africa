@@ -75,6 +75,99 @@
                 </div>
             </nav>
         </section> 
+        <section class="blog-contents">
+            <div class="container">
+                <div class="blog-text">
+                    <div class="headline">
+                        <p>INSIGHT</p>
+                    </div>
+                    <h1>Who is Karen Mosepe?</h1>
+                    <p class="headp">Lorem ipsum dolor sit amet consectetur. Dignissim sed consectetur id non nunc orci netus viverra. Condimentum ridiculus enim est tempus eu. Purus adipiscing turpis erat convallis morbi nunc enim venenatis diam. Ut vel amet volutpat magna morbi massa amet. Imperdiet dignissim vel ultrices tortor aliquam nisi et. Orci morbi at et fermentum gravida in.</p>
+                </div>
+                <div class="blog-images">
+                    <img src="css/img/blog content image one.png" alt="Karen Mosepe">
+                </div>
+                <div class="blog-text">
+                    <p class="headp">Who are you and what do you do?</p>
+                    <p class="blur">Lorem ipsum dolor sit amet consectetur. Viverra enim a eu rhoncus commodo facilisis. Scelerisque vestibulum parturient consequat lectus. Ornare mattis sapien ultrices fermentum. Faucibus vitae viverra faucibus malesuada pharetra tempor nec. Adipiscing aliquet dui imperdiet sit dictumst. Eleifend interdum sodales vehicula euismod donec aliquam.</p>
+                    <p class="blur">Quam sodales venenatis ullamcorper id egestas. Pretium ultrices feugiat pretium mi quis imperdiet sagittis. Sed volutpat eu amet elementum pellentesque. Mauris arcu enim eget consequat id. Ac lacus nisi neque orci donec. Leo dui sem varius id aliquet placerat scelerisque. Amet est nunc vulputate eu facilisis sit. Lobortis tempor duis lorem venenatis semper tellus bibendum. At cursus netus mi et vitae convallis. Cursus quis non elementum placerat. In urna in commodo blandit lectus.</p>
+                    <p class="headp">What are you working on right now?</p>
+                    <p class="blur">Forem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="blog-images">
+                    <img src="css/img/blog content image two.png" alt="Karen Mosepe">
+                </div>
+                <div class="blog-text">
+                    <p class="headp">Describe your working style in 3 words</p>
+                    <p class="blur">Forem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+        </section>
+        <section class="related-stories">
+            <div class="container">
+                <div class="story-head">
+                    <h1>Related Stories</h1>
+                </div>
+                <div class="stories">
+                    <div class="stories-content">
+                        <div class="story story-one">
+                            <img src="css/img/Estafric small ONe.png" alt="Blog Thumbnail">
+                            <div class="story-info">
+                                <div class="headline">
+                                    <p>INSIGHT</p>
+                                </div>
+                                <a href="blog_content.html">Lorem ipsum dolor sit amet</a>
+                                <p>December 12, 2022</p>
+                            </div>
+                        </div>
+                        <div class="story story-one">
+                            <img src="css/img/skin two.png" alt="Blog Thumbnail">
+                            <div class="story-info">
+                                <div class="headline">
+                                    <p>INSIGHT</p>
+                                </div>
+                                <a href="blog_content.html">Lorem ipsum dolor sit amet</a>
+                                <p>December 25, 2022</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="stories">
+                    <div class="stories-content">
+                        <div class="story story-one">
+                            <img src="css/img/skine three.png" alt="Blog Thumbnail">
+                            <div class="story-info">
+                                <div class="headline">
+                                    <p>INSIGHT</p>
+                                </div>
+                                <a href="blog_content.html">Lorem ipsum dolor sit amet</a>
+                                <p>December 1, 2022</p>
+                            </div>
+                        </div>
+                        <div class="story story-one">
+                            <img src="css/img/Estafric small two.png" alt="Blog Thumbnail">
+                            <div class="story-info">
+                                <div class="headline">
+                                    <p>INSIGHT</p>
+                                </div>
+                                <a href="blog_content.html">Lorem ipsum dolor sit amet</a>
+                                <p>December 1, 2022</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="stories-pagination">
+                    <div class="number active" onclick="currentSlide(1)"><span>1</span></div>
+                    <div class="number" onclick="currentSlide(2)"><span>2</span></div>
+                    <div class="number" ><span>3</span></div>
+                    <div class="number" ><span>4</span></div>
+                    <div class="number" ><span>5</span></div>
+                    <div class="number" ><span>...</span></div>
+                    <div class="number" ><span>13</span></div>
+                </div>
+            </div>
+            <img src="css/img/Bottom Pattern.png" alt="" width="100%" class="blg-content-image">
+        </section>
     </main>
     <footer>
         <div class="footer">
@@ -242,6 +335,36 @@
         </div>
     </footer>
 
-    <script src="js/script.js"></script>
+    <script>
+        /* == Stories == */
+            var slideIndex = 1;
+                    showSlides(slideIndex);
+
+                    function plusSlides(n) {
+                    showSlides(slideIndex += n);
+                    }
+
+                    function currentSlide(n) {
+                    showSlides(slideIndex = n);
+                    }
+
+                    function showSlides(n) {
+                    var i;
+                    var slides = document.getElementsByClassName("stories");
+                    var dots = document.getElementsByClassName("story");
+                    if (n > slides.length) {slideIndex = 1}    
+                    if (n < 1) {slideIndex = slides.length}
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";  
+                    }
+                    for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                    }
+                    slides[slideIndex-1].style.display = "block";  
+                    dots[slideIndex-1].className += " active";
+
+                    }
+            /* == || Blogs == */
+    </script>
 </body>
 </html>
