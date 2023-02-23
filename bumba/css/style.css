@@ -72,7 +72,7 @@ nav{
     justify-content: space-between;
     position: absolute;
     top: 0;
-    z-index: 5;
+    z-index: 16;
 }
 nav .left{
     height: 100%;
@@ -120,6 +120,7 @@ nav .right a{
 nav .right button{
     border: 0;
     outline: 0;
+    padding: 4px;
     height: fit-content;
     width: fit-content;
     font-size: 24px;
@@ -138,39 +139,110 @@ main{
 .banner{
     height: 700px;
     position: relative;
-    z-index: 0;
+    background-color: #F7941E;
 }
 .menu-links{
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     height: 100vh;
     width: 100vw;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     background-color: #231F20;
-    z-index: 10;
+    z-index: 20;
     display: none;
+    transition: all ease 1600ms;
+}
+.menu-hold{
+    height: 100%;
+    width: 100%;
+    background-color: #231F20;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu-links .image{
+    width: 10%;
+    height: 100% !important;
+    position: relative;
+    background-image: url('img/Mask\ group\ rotated.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.menu-links .links{
+    width: 90%;
+    height: 100% !important;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.menu-links .links .menu-link{
+    height: fit-content;
+    width: 100%;
+    max-width: 700px;
+    min-width: 280px;
+    position: relative;
+    padding: 20px 100px 20px 100px;
+}
+.menu-links .links .menu-link a{
+    font-size: 50px;
+    padding: 10px 0px;
+    color: #ffffff;
+    font-family: Gotham-Medium;
+    display: block !important;
+    text-decoration: none;
+}
+.menu-links .links .menu-link .closebtn{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 50px;
+    color: #ffffff;
+    background-color: #00000000;
+    outline: none;
+    border: 0px;
 }
 .banner-text{
     height: 100%;
     width: 100%;
-    background: linear-gradient(90deg, #F7941E 50%, rgba(247, 148, 30, 0.89) 65%, rgba(247, 148, 30, 0.55) 70%, rgba(247, 148, 30, 0) 119.59%);
-    transform: rotate(-0.15deg);
+    background-color: #F7941E;
 }
 .banner-image{
     position: absolute;
     right: 0px !important;
-    top: 0px;
-    height: 700px;
+    top: 0 !important;
+    height: 720px;
+    width: 725px;
+    z-index: 0;
 }
 .banner-image img{
-    height: 100% !important;
+    height: 720px !important;
+    width: 725px !important;
+    position: absolute;
+    top: 0;
+    left: 0;   
+    z-index: 2;
+}
+.banner-image .image-mask{
+    height: 720px !important;
+    width: 725px !important;
+    background: linear-gradient(90deg, 
+    rgb(247, 148, 30) 15%, 
+    rgba(247, 148, 30, 0.89) 30%, 
+    rgba(247, 148, 30, 0.55) 40%, 
+    rgba(247, 148, 30, 0) 80%,
+    rgba(247, 148, 30, 0.55) 92%,
+    rgba(247, 148, 30, 0.89) 97%,
+    rgb(247, 148, 30) 100% );
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
 }
 .banner-text-container{
     height: 100%;
     padding: 220px 0px 20px;
+    position: relative;
+    z-index: 10;
 }
 .banner-text-container h1:nth-child(1){
     font-family: Gotham-Book;
