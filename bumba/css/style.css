@@ -396,11 +396,9 @@ section.team{
     padding: 40px 0px 60px;
 }
 .team-head{
-    padding: 10px;
+    padding: 20px;
 }
 .team-head h1{
-    font-size: 52px;
-    line-height: 50px;
     color: #231F20;
     font-family: Gotham-Book;
     text-align: center;
@@ -588,7 +586,6 @@ section.banner.about .banner-image .image-mask{
 }
 section.banner.about .banner-text-container{
     height: 482px;
-    padding: 220px 0px 20px;
     position: relative;
     z-index: 10;
 }
@@ -603,7 +600,8 @@ section.branding img{
     display: flex;
     align-items: flex-start;
     justify-content: space-evenly;
-    padding: 40px 0px;
+    flex-wrap: wrap;
+    padding: 40px 20px;
 }
 .branding-container .left{
     height: fit-content;
@@ -659,10 +657,10 @@ section.branding img{
     padding: 20px 0px;
 }
 .services-container .row .column h1{
+    font-size: 50px !important;
+    line-height: 52px !important;
     font-family: Gotham-Medium;
     font-weight: 400;
-    font-size: 52px;
-    line-height: 52px;
     color: #FFFFFF;
 }
 .services-container .row .column p{
@@ -670,6 +668,7 @@ section.branding img{
     font-size: 52px;
     line-height: 52px;
     color: #FFFFFF;
+    margin: 10px 0px 20px;
 }
 .services-container .row .column ul{
     margin-left: 20px;
@@ -1183,10 +1182,42 @@ main.blog-content .banner{
 /* Extra small devices (phones, 600px and down) */
 @media screen and  (max-width: 400px) {
     nav .left{
-        padding: 0px 15px;
+        padding: 0px 15px !important;
     }
     nav .right{
-        padding: 0px 15px;
+        padding: 0px 15px !important;
+    }
+    .menu-links .image{
+        width: 20%;
+    }
+    .menu-links .links{
+        width: 80%;
+    }
+    .menu-links .links .menu-link{
+        height: fit-content;
+        width: 100%;
+        max-width: 700px;
+        min-width: 280px;
+        padding: 20px !important;
+    }
+    .menu-links .links .menu-link a{
+        font-size: 20px !important;
+    }
+    .menu-links .links .menu-link .closebtn{
+        top: 20px;
+        right: 20px;
+        font-size: 20px !important;
+    }
+    .team-head h1{
+        font-size: 28px !important;
+        line-height: 36px !important;
+    }
+    .services-container .row .column p{
+        font-size: 40px !important;
+        line-height: 42px !important;
+    }
+    .services-container .row .column{
+        margin: 20px 10px !important;
     }
 }
 
@@ -1206,7 +1237,28 @@ main.blog-content .banner{
         width: 100% !important;
         max-width: 600px;
         min-width: 280px;
-        padding: 0px 40px !important;
+        padding: 0px 40px;
+    }
+    .menu-links .image{
+        width: 20%;
+    }
+    .menu-links .links{
+        width: 80%;
+    }
+    .menu-links .links .menu-link{
+        height: fit-content;
+        width: 100%;
+        max-width: 700px;
+        min-width: 280px;
+        padding: 20px 60px 20px 80px;
+    }
+    .menu-links .links .menu-link a{
+        font-size: 30px;
+    }
+    .menu-links .links .menu-link .closebtn{
+        top: 20px;
+        right: 40px;
+        font-size: 30px;
     }
     .banner-text-container{
         padding: 240px 15px 20px;
@@ -1240,6 +1292,13 @@ main.blog-content .banner{
     footer .footer-links{
         padding: 0px 15px;
         justify-content: space-evenly;
+    }
+    .team-head h1{
+        font-size: 32px;
+        line-height: 30px;
+    }
+    .services-container .row .column{
+        margin: 20px 15px;
     }
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */ 
@@ -1314,6 +1373,13 @@ main.blog-content .banner{
         padding: 0px 15px;
         justify-content: space-evenly;
     }
+    .team-head h1{
+        font-size: 42px;
+        line-height: 40px;
+    }
+    .services-container .row .column{
+        margin: 20px 20px !important;
+    }
 }
 /* Medium devices (landscape tablets, 768px and up) */ 
 @media screen and (max-width: 991px) and (min-width: 768px){
@@ -1363,6 +1429,16 @@ main.blog-content .banner{
         padding: 0px 20px;
         justify-content: space-evenly;
     }
+    section.banner.about .banner-text-container{
+        padding: 220px 0px 20px;
+    }
+    .team-head h1{
+        font-size: 52px;
+        line-height: 50px;
+    }
+    .services-container .row .column{
+        margin: 20px 20px !important;
+    }
 }
 /* Large devices (laptops/desktops, 992px and up) */ 
 @media only screen and (min-width: 992px) {
@@ -1405,7 +1481,14 @@ main.blog-content .banner{
     footer .footer-links{
         justify-content: space-between;
     }
-}
-/* Extra large devices (large laptops and desktops, 1200px and up) */ 
-@media only screen and (min-width: 1200px) {
+    section.banner.about .banner-text-container{
+        padding: 220px 0px 20px;
+    }
+    .team-head h1{
+        font-size: 52px;
+        line-height: 50px;
+    }
+    .services-container .row .column{
+        margin: 20px !important;
+    }
 }
