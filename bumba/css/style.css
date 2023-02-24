@@ -923,6 +923,7 @@ section.portfolio .twafane{
     display: flex;
     align-items: flex-start;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 .blog.blog-one{
     height: fit-content;
@@ -1033,8 +1034,6 @@ main.blog-content .banner{
 }
 .blog-contents .blog-text h1{
     font-family: Gotham-Medium;
-    font-size: 84px;
-    line-height: 80px;
     margin: 20px;
     color: #231F20;
 }
@@ -1103,6 +1102,10 @@ main.blog-content .banner{
     display: flex;
     align-items: flex-start;
     justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.stories-content .story{
+    margin: 20px 10px;
 }
 .story.story-one{
     height: fit-content;
@@ -1219,6 +1222,10 @@ main.blog-content .banner{
     .services-container .row .column{
         margin: 20px 10px !important;
     }
+    .blog-contents .blog-text h1{
+        font-size: 54px !important;
+        line-height: 50px !important;
+    }
 }
 
 @media screen and (min-width: 0px) and  (max-width: 600px) {
@@ -1300,6 +1307,10 @@ main.blog-content .banner{
     .services-container .row .column{
         margin: 20px 15px;
     }
+    .blog-contents .blog-text h1{
+        font-size: 54px;
+        line-height: 50px;
+    }
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */ 
 @media screen and (max-width: 767px) and (min-width: 601px) {
@@ -1380,6 +1391,10 @@ main.blog-content .banner{
     .services-container .row .column{
         margin: 20px 20px !important;
     }
+    .blog-contents .blog-text h1{
+        font-size: 64px;
+        line-height: 60px;
+    }
 }
 /* Medium devices (landscape tablets, 768px and up) */ 
 @media screen and (max-width: 991px) and (min-width: 768px){
@@ -1439,6 +1454,10 @@ main.blog-content .banner{
     .services-container .row .column{
         margin: 20px 20px !important;
     }
+    .blog-contents .blog-text h1{
+        font-size: 74px;
+        line-height: 70px;
+    }
 }
 /* Large devices (laptops/desktops, 992px and up) */ 
 @media only screen and (min-width: 992px) {
@@ -1490,5 +1509,9 @@ main.blog-content .banner{
     }
     .services-container .row .column{
         margin: 20px !important;
+    }
+    .blog-contents .blog-text h1{
+        font-size: 84px;
+        line-height: 80px;
     }
 }
