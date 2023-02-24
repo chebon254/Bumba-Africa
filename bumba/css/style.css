@@ -67,6 +67,10 @@ body{
 }
 .reveal{
     position: relative;
+    -moz-transform: translateY(50px);
+    -webkit-transform: translateY(50px);
+    -o-transform: translateY(50px);
+    -ms-transform: translateY(50px);
     transform: translateY(50px);
     opacity: 0;
     -webkit-transition: all 2000ms ease;
@@ -164,10 +168,10 @@ main{
     background-color: #231F20;
     z-index: 20;
     -webkit-transition: all 500ms ease;
--moz-transition: all 500ms ease;
--ms-transition: all 500ms ease;
--o-transition: all 500ms ease;
-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
     animation: left_reveal 500ms forwards;
 }
 @keyframes left_reveal {
