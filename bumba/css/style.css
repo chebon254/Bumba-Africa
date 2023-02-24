@@ -232,13 +232,14 @@ transition: all 500ms ease;
     height: 720px;
     position: relative;
     background-color: #F7941E;
+    overflow: hidden;
 }
 .banner .rectangle{
     height: 160px;
     width: 450px;
     background-color: #ffffff;
     position: absolute;
-    bottom: -160px;
+    bottom: -200px;
     right: 0px;
     transition: all ease 600ms;
 }
@@ -258,8 +259,6 @@ transition: all 500ms ease;
 }
 .banner-image{
     position: absolute;
-    right: 0px !important;
-    top: 0 !important;
     height: 620px;
     width: 725px;
     z-index: 0;
@@ -595,6 +594,7 @@ section.banner.about{
     height: 482px !important;
     position: relative;
     background-color: #F7941E;
+    overflow: hidden;
 }
 section.banner.about .banner-text{
     height: 482px;
@@ -603,8 +603,6 @@ section.banner.about .banner-text{
 }
 section.banner.about .banner-image{
     position: absolute;
-    right: 0 !important;
-    top: 0 !important;
     height: 482px;
     width: 725px;
     z-index: 0;
@@ -1209,8 +1207,8 @@ main.blog-content .banner{
 
     }
     .banner-text-container h1:nth-child(1){
-        font-size: 50px !important;
-        line-height: 50px !important;
+        font-size: 64px !important;
+        line-height: 60px !important;
         font-weight: 500 !important;
     }
     .banner-text-container p:nth-child(2){
@@ -1244,6 +1242,14 @@ main.blog-content .banner{
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */ 
 @media screen and (max-width: 767px){
+    .banner-image{
+        right: -120px !important;
+        top: 0 !important;
+    }
+    section.banner.about .banner-image{
+        right: -120px !important;
+        top: 0 !important;
+    }
     .blog-container img.stars{
         position: absolute;
         bottom: -10%;
@@ -1257,6 +1263,14 @@ main.blog-content .banner{
     }
 }
 @media screen and (min-width: 767px){
+    .banner-image{
+        right: 0px !important;
+        top: 0 !important;
+    }
+    section.banner.about .banner-image{
+        right: 0 !important;
+        top: 0 !important;
+    }
     .banner-text-container button{
         margin: 40px 0px 0px;
     }
