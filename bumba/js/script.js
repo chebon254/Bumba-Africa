@@ -2,6 +2,8 @@
 function onload() {
     document.getElementById("ban-image").style.height = "720px";
     document.getElementById("ban-rect").style.width = "0px";
+    document.getElementById("ban-recttwo").style.height = "0px";
+    document.getElementById("ban-recttwo").style.width = "0px";
 }
 /* === Overlay === */
 function openContact() {
@@ -36,7 +38,8 @@ var slideIndex = 1;
         for (i = 0; i < slides.length; i++) {
             slides[i].style.display = "none";  
         }
-        for (i = 0; i < dots.length; i++) {
+        for (i = 0; i < dots.length; 
+            section.abouti++) {
             dots[i].className = dots[i].className.replace(" active", "");
         }
         slides[slideIndex-1].style.display = "block";  

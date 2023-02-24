@@ -15,7 +15,6 @@ html {
 body{
     position: relative;
 }
-
 /* == SCROLL BAR == */
 /* width */
 ::-webkit-scrollbar {
@@ -236,10 +235,19 @@ transition: all 500ms ease;
 }
 .banner .rectangle{
     height: 160px;
-    width: 350px;
+    width: 450px;
     background-color: #ffffff;
     position: absolute;
     bottom: -160px;
+    right: 0px;
+    transition: all ease 600ms;
+}
+.banner .rectangle-two{
+    height: 350px;
+    width: 450px;
+    background-color: #231F20;
+    position: absolute;
+    bottom: 0px;
     right: 0px;
     transition: all ease 600ms;
 }
@@ -296,13 +304,13 @@ transition: all 500ms ease;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
-    line-height: 32px;
+    line-height: 22px;
     color: #231F20; 
     width: 100%;
-    max-width: 600px;
+    max-width: 690px;
+    margin: 4px 0px 0px;
 }
 .banner-text-container button{
-    margin: 40px 0px 0px;
     width: 200px;
     height: 50px;
     background: #231F20;
@@ -350,7 +358,7 @@ section.projects img{
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
-    line-height: 32px;
+    line-height: 22px;
     text-align: justify;
     color: #FFFFFF;
     width: 100%;
@@ -370,13 +378,12 @@ section.projects img{
     color: #231F20;
     font-size: 16px;
     font-family: Gotham-Medium;
-    margin: 20px 0px 0px;
 }
 section.about{
     position: relative;
     z-index: 0;
     background-color: #ffffff;
-    padding: 20px 0px 10px;
+    padding: 0px 0px 10px;
 }
 section.about img{
     width: 100% !important;
@@ -408,7 +415,7 @@ section.about img{
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
-    line-height: 32px;
+    line-height: 22px;
     text-align: justify;
     color: #231F20;
     width: 100%;
@@ -428,7 +435,6 @@ section.about img{
     color: #231F20;
     font-size: 16px;
     font-family: Gotham-Medium;
-    margin: 20px 0px 0px;
 }
 section.team{
     width: 100%;
@@ -586,7 +592,7 @@ footer .footer-links{
 
 /* === ABout Page == */
 section.banner.about{
-    height: 482px ;
+    height: 482px !important;
     position: relative;
     background-color: #F7941E;
 }
@@ -597,15 +603,15 @@ section.banner.about .banner-text{
 }
 section.banner.about .banner-image{
     position: absolute;
-    right: 0px !important;
+    right: 0 !important;
     top: 0 !important;
     height: 482px;
-    width: 487px;
+    width: 725px;
     z-index: 0;
 }
 section.banner.about .banner-image img{
     height: 482px !important;
-    width: 487px !important;
+    width: 725px !important;
     position: absolute;
     top: 0;
     left: 0;   
@@ -613,7 +619,7 @@ section.banner.about .banner-image img{
 }
 section.banner.about .banner-image .image-mask{
     height: 482px !important;
-    width: 487px !important;
+    width: 725px !important;
     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f7941e+15,f7941e+100&1+15,0.89+30,0.55+40,0+80,0.55+92,0.89+97,1+100 */
     background: -moz-linear-gradient(left,  rgba(247,148,30,1) 15%, rgba(247,148,30,0.89) 30%, rgba(247,148,30,0.55) 40%, rgba(247,148,30,0) 80%, rgba(247,148,30,0.55) 92%, rgba(247,148,30,0.89) 97%, rgba(247,148,30,1) 100%); /* FF3.6-15 */
     background: -webkit-linear-gradient(left,  rgba(247,148,30,1) 15%,rgba(247,148,30,0.89) 30%,rgba(247,148,30,0.55) 40%,rgba(247,148,30,0) 80%,rgba(247,148,30,0.55) 92%,rgba(247,148,30,0.89) 97%,rgba(247,148,30,1) 100%); /* Chrome10-25,Safari5.1-6 */
@@ -668,7 +674,7 @@ section.branding img{
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
-    line-height: 32px;
+    line-height: 22px;
     text-align: justify;
     color: #ffffff;
     width: 100%;
@@ -716,9 +722,9 @@ section.branding img{
 .services-container .row .column ul li{
     font-family: Gotham-Book;
     font-size: 20px;
-    line-height: 32px;
+    line-height: 19px;
     text-align: justify;
-    padding: 5px 10px;
+    padding: 1px 10px;
     color: #ffffff;
     text-transform: capitalize;
     list-style: disc !important;
@@ -806,7 +812,7 @@ section.branding img{
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
-    line-height: 32px;
+    line-height: 22px;
     color: #231F20;
     margin: 10px;
 }
@@ -818,7 +824,6 @@ section.branding img{
 /* === Blog Page == */
 .blog-container{
     height: fit-content;
-    padding: 80px;
     position: relative;
 }
 .blog-container img.stars{
@@ -858,13 +863,13 @@ section.branding img{
 .blog .blog-info .headline p{
     font-family: Gotham-Book;
     font-size: 20px;
-    line-height: 32px;
+    line-height: 22px;
     color: #ED1D24;
 }
 .blog .blog-info a:nth-child(2){
     font-family: Gotham-Book;
     font-size: 20px;
-    line-height: 32px;
+    line-height: 22px;
     color: #ffffff;
     text-decoration: none;
     padding: 14px 0px;
@@ -872,7 +877,7 @@ section.branding img{
 .blog .blog-info p:nth-child(3){
     font-family: Gotham-Book;
     font-size: 20px;
-    line-height: 32px;
+    line-height: 22px;
     color: #828282;
     margin: 16px 0px 10px;
 }
@@ -913,7 +918,7 @@ section.branding img{
 .pagination .number span{
     font-family: Gotham-Book;
     font-size: 20px;
-    line-height: 32px;
+    line-height: 22px;
     color: #ffffff;
 }
 /* === || Blog Page == */
@@ -945,7 +950,7 @@ main.blog-content .banner{
 .blog-contents .blog-text .headline p{
     font-family: Gotham-Book;
     font-size: 20px;
-    line-height: 32px;
+    line-height: 22px;
     color: #ED1D24;
 }
 .blog-contents .blog-text h1{
@@ -963,7 +968,7 @@ main.blog-content .banner{
 
     font-weight: 700;
     font-size: 20px;
-    line-height: 32px;
+    line-height: 22px;
 
     /* black */
 
@@ -988,7 +993,7 @@ main.blog-content .banner{
 
     font-weight: 400;
     font-size: 20px;
-    line-height: 32px;
+    line-height: 22px;
 
     /* black */
 
@@ -1044,14 +1049,14 @@ main.blog-content .banner{
 .story .story-info .headline p{
     font-family: Gotham-Book;
     font-size: 20px;
-    line-height: 32px;
+    line-height: 22px;
     color: #ED1D24;
 }
 .story .story-info a:nth-child(2){
     font-family: Gotham-Book;
     font-weight: 500;
     font-size: 20px;
-    line-height: 32px;
+    line-height: 22px;
     color: #231F20;
     text-decoration: none;
     padding: 14px 0px;
@@ -1062,7 +1067,7 @@ main.blog-content .banner{
 .story .story-info p:nth-child(3){
     font-family: Gotham-Book;
     font-size: 20px;
-    line-height: 32px;
+    line-height: 22px;
     color: #828282;
     margin: 16px 0px 10px;
 }
@@ -1094,7 +1099,7 @@ main.blog-content .banner{
 .stories-pagination .number span{
     font-family: Gotham-Book;
     font-size: 20px;
-    line-height: 32px;
+    line-height: 22px;
     color: #F7941E;
 }
 .blg-content-image{
@@ -1109,6 +1114,7 @@ main.blog-content .banner{
     }
     nav .right{
         padding: 0px 15px !important;
+        visibility: hidden;
     }
     .menu-links .image{
         width: 20%;
@@ -1146,6 +1152,9 @@ main.blog-content .banner{
         font-size: 54px !important;
         line-height: 50px !important;
     }
+    .blog-container{
+        padding: 80px 10px;
+    }
 }
 
 @media screen and (min-width: 0px) and  (max-width: 600px) {
@@ -1165,6 +1174,7 @@ main.blog-content .banner{
         max-width: 600px;
         min-width: 280px;
         padding: 0px 40px;
+        visibility: hidden;
     }
     .menu-links .image{
         width: 20%;
@@ -1188,7 +1198,7 @@ main.blog-content .banner{
         font-size: 30px;
     }
     .banner-text-container{
-        padding: 240px 15px 20px;
+        padding: 220px 15px 20px;
     }
     .banner-image .image-mask{
         /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f7941e+20,f7941e+100&1+20,0.89+40,0.55+60,0.89+80,1+100 */
@@ -1233,6 +1243,29 @@ main.blog-content .banner{
     }
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */ 
+@media screen and (max-width: 767px){
+    .blog-container img.stars{
+        position: absolute;
+        bottom: -10%;
+        left: -40%;
+        width: 200px !important;
+    }
+    .banner-text-container button,
+    .projects-container .left button,
+    .about-container .right button {
+        margin: 20px auto 0px !important;
+    }
+}
+@media screen and (min-width: 767px){
+    .banner-text-container button{
+        margin: 40px 0px 0px;
+    }
+    .projects-container .left button,
+    .about-container .right button{
+        margin: 20px 0px 0px;
+    }
+    
+}
 @media screen and (max-width: 767px) and (min-width: 601px) {
     nav{
         flex-wrap: wrap;
@@ -1250,6 +1283,7 @@ main.blog-content .banner{
         max-width: 767px;
         min-width: 600px;
         padding: 0px 40px !important;
+        visibility: hidden;
     }
     .menu-links .image{
         width: 10%;
