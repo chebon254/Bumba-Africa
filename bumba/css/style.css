@@ -1142,6 +1142,7 @@ main.blog-content .banner{
     .team-head h1{
         font-size: 28px !important;
         line-height: 36px !important;
+        text-align: center !important;
     }
     .services-container .row .column p{
         font-size: 40px !important;
@@ -1265,12 +1266,46 @@ main.blog-content .banner{
     .about-container .right button {
         margin: 20px auto 0px !important;
     }
+    .banner-text-container h1:nth-child(1){
+        font-size: 54px !important;
+        line-height: 60px !important;
+        font-weight: 500 !important;
+        text-align: center;
+    }
+    .banner-text-container p:nth-child(2){
+        font-family: Gotham-Book;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 22px;
+        color: #ffffff; 
+        width: 100%;
+        max-width: 690px;
+        margin: 4px 0px 0px;
+        margin-top: 20px;
+        text-align: center;
+    }
+    .projects-container .left h2{
+        font-family: Gotham-Book;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 42px;
+        line-height: 49px;
+        color: #FFFFFF;
+        margin: 0px 0px 40px;
+        text-align: center;
+    }
+    .text-sm{
+        text-align: center !important;
+
+    }
 }
 @media screen and (min-width: 767px){
     .banner-image{
         right: 0px !important;
         top: 0 !important;
     }
+
     section.banner.about .banner-image{
         right: 0 !important;
         top: 0 !important;
