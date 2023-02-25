@@ -443,7 +443,7 @@ section.team{
     width: 100%;
 }
 .team-container{
-    padding: 40px 0px 60px;
+    padding: 40px 0px 10px;
 }
 .team-head{
     padding: 20px;
@@ -653,7 +653,7 @@ section.branding img{
 }
 .branding-container .left{
     height: fit-content;
-    min-height: 400px;
+    min-height: 300px;
     padding: 20px 0px;
 }
 .branding-container .left h1{
@@ -1243,6 +1243,11 @@ main.blog-content .banner{
     .blog-contents .blog-text h1{
         font-size: 54px;
         line-height: 50px;
+    }
+    .branding-container .left{
+        height: fit-content;
+        min-height: 220px;
+        padding: 20px 0px;
     }
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */ 
