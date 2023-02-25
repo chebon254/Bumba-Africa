@@ -14,7 +14,6 @@ html {
 }
 body{
     position: relative;
-    z-index: 0;
 }
 /* == SCROLL BAR == */
 /* width */
@@ -195,6 +194,7 @@ nav{
     z-index: 16;
 }
 nav.sticky{
+    z-index: 16;
     background-color: #ffffff;
     -webkit-transition: all 500ms ease;
     -moz-transition: all 500ms ease;
@@ -934,6 +934,7 @@ section.branding img{
 .blog-container{
     height: fit-content;
     position: relative;
+    z-index: 0;
 }
 .blog-container img.stars{
     position: absolute;
