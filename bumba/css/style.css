@@ -126,7 +126,7 @@ body{
     background-color: #ffffff;
     z-index: 20;
     text-decoration: none;
-    visibility: visible;
+    visibility: hidden;
     -moz-animation: bounce 2000ms infinite linear;
     -o-animation: bounce 2000ms infinite linear;
     -webkit-animation: bounce 2000ms infinite linear;
@@ -142,7 +142,7 @@ body{
     transition: all ease 2000ms;
 }
 .to-top i{
-    color: var(--active);
+    color: var(-);
     pointer-events: none;
 }
 .to-top.show{
@@ -265,6 +265,8 @@ nav .right button i{
 main{
     height: fit-content;
     width: 100%;
+    position: relative;
+    z-index: 0;
 }
 .menu-links{
     position: fixed;
@@ -437,6 +439,8 @@ main{
 section.projects{
     background-color: #231F20;
     padding: 20px 0px 10px;
+    position: relative;
+    z-index: -2;
 }
 section.projects img{
     width: 100% !important;
@@ -952,6 +956,13 @@ section.branding img{
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
+.blogs-content .blog-link{
+    display: block;
+}
+.blog{
+    position: relative;
+    z-index: 0;
+}
 .blog.blog-one{
     height: fit-content;
     padding: 10px;
@@ -1006,7 +1017,7 @@ section.branding img{
     justify-content: center;
     padding: 20px;
 }
-.pagination .number.active,
+.pagination .number,
 .pagination .number:hover{
     background: #000000;
 }
@@ -1187,7 +1198,7 @@ main.blog-content .banner{
     justify-content: center;
     padding: 20px;
 }
-.stories-pagination .number.active,
+.stories-pagination .number,
 .stories-pagination .number:hover{
     background: #000000;
 }
@@ -1656,5 +1667,4 @@ main.blog-content .banner{
         padding: 20.5px 11px;
     }
 }
-@media screen and (max-width: 999px) and (min-width: 768px){
-}
+
