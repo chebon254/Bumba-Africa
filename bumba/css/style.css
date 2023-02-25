@@ -436,6 +436,9 @@ main{
     color: #ffffff;
     outline: none;
 }
+section{
+    overflow: hidden;
+}
 section.projects{
     background-color: #231F20;
     padding: 20px 0px 10px;
@@ -943,7 +946,7 @@ section.branding img{
 .blog-container img.stars{
     position: absolute;
     bottom: -32px;
-    left: -60px;
+    left: -100px;
     width: 200px !important;
 }
 .blogs{
@@ -1017,7 +1020,7 @@ section.branding img{
     justify-content: center;
     padding: 20px;
 }
-.pagination .number,
+.pagination .number.active,
 .pagination .number:hover{
     background: #000000;
 }
@@ -1198,7 +1201,7 @@ main.blog-content .banner{
     justify-content: center;
     padding: 20px;
 }
-.stories-pagination .number,
+.stories-pagination .number.active,
 .stories-pagination .number:hover{
     background: #000000;
 }
