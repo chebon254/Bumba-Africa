@@ -1,3 +1,16 @@
+const header = document.querySelector("nav");
+const toTop = document.querySelector(".to-top");
+window.onscroll = ()=>{
+    this.scrollY > 100 ? header.classList.add("sticky") : header.classList.remove("sticky");
+    this.scrollY > 200 ? toTop.classList.add("show") : toTop.classList.remove("show");
+}
+/* == BACK TO TOP == */
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+/* == BACK TO TOP == */
 // Homepage Animation
 function onload() {
     document.getElementById("ban-image").style.height = "720px";

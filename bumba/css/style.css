@@ -14,6 +14,7 @@ html {
 }
 body{
     position: relative;
+    z-index: 0;
 }
 /* == SCROLL BAR == */
 /* width */
@@ -87,6 +88,98 @@ body{
     transform: translateY(0px);
     opacity: 1;
 }
+
+.to-top{
+    height: 50px;
+    width: 50px;
+    -webkit-box-shadow: -4px 2px 12px #00000033,
+    -2px 2px 16px #00000033,
+    2px 2px 22px #00000033,
+    4px 2px 32px #00000033,
+    6px 2px 42px #00000033,
+    20px 2px 52px #00000033;
+    -moz-box-shadow: -4px 2px 12px #00000033,
+        -2px 2px 16px #00000033,
+        2px 2px 22px #00000033,
+        4px 2px 32px #00000033,
+        6px 2px 42px #00000033,
+        20px 2px 52px #00000033;
+    -o-shadow: -4px 2px 12px #00000033,
+        -2px 2px 16px #00000033,
+        2px 2px 22px #00000033,
+        4px 2px 32px #00000033,
+        6px 2px 42px #00000033,
+        20px 2px 52px #00000033;
+    box-shadow: -4px 2px 12px #00000033,
+        -2px 2px 16px #00000033,
+        2px 2px 22px #00000033,
+        4px 2px 32px #00000033,
+        6px 2px 42px #00000033,
+        20px 2px 52px #00000033;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    font-size: 20px;
+    background-color: #ffffff;
+    z-index: 20;
+    text-decoration: none;
+    visibility: visible;
+    -moz-animation: bounce 2000ms infinite linear;
+    -o-animation: bounce 2000ms infinite linear;
+    -webkit-animation: bounce 2000ms infinite linear;
+    animation: bounce 2000ms infinite linear;
+}
+
+.to-top:hover{
+    animation: none;
+    -webkit-transition: all ease 2000ms;
+    -moz-transition: all ease 2000ms;
+    -ms-transition: all ease 2000ms;
+    -o-transition: all ease 2000ms;
+    transition: all ease 2000ms;
+}
+.to-top i{
+    color: var(--active);
+    pointer-events: none;
+}
+.to-top.show{
+    visibility: visible;
+}
+@-webkit-keyframes bounce {
+    0% { bottom: 40px; }
+    50% { bottom: 30px; }
+    70% { bottom: 35px; }
+    100% { bottom: 40px; }
+}
+@-moz-keyframes bounce {
+    0% { bottom: 40px; }
+    50% { bottom: 30px; }
+    70% { bottom: 35px; }
+    100% { bottom: 40px; }
+}
+@-o-keyframes bounce {
+    0% { bottom: 40px; }
+    50% { bottom: 30px; }
+    70% { bottom: 35px; }
+    100% { bottom: 40px; }
+}
+@-ms-keyframes bounce {
+    0% { bottom: 40px; }
+    50% { bottom: 30px; }
+    70% { bottom: 35px; }
+    100% { bottom: 40px; }
+}
+@keyframes bounce {
+    0% { bottom: 40px; }
+    50% { bottom: 30px; }
+    70% { bottom: 35px; }
+    100% { bottom: 40px; }
+}
+
 /* == || SCROLL BAR == */
 .container{
     margin: auto;
@@ -97,10 +190,24 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: absolute;
+    position: fixed;
     top: 0;
     z-index: 16;
 }
+nav.sticky{
+    background-color: #ffffff;
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+    -webkit-box-shadow: 6px 6px 24px #00000033;
+    -moz-box-shadow: 6px 6px 24px #00000033;
+    box-shadow: 6px 6px 24px #00000033;
+}
+nav.sticky .right a{
+    color: #231F20;
+} 
 nav .left{
     background-color: #ffffff;
     display: flex;
