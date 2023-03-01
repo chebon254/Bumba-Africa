@@ -597,6 +597,7 @@ section.team{
     color: #231F20;
     font-family: Gotham-Book;
     padding: 10px 0px;
+    min-height: 180px;
 }
 .member-info a:nth-child(4){
     text-align: justify;
@@ -683,7 +684,7 @@ footer .footer-links{
 }
 .footer-copyright{
     background-color: #231F20;
-    padding: 28px;
+    padding: 28Sustainable Fashion: px;
 }
 .footer-copyright p{
     font-family: Gotham-Book;
@@ -1139,6 +1140,8 @@ main.blog-content .banner{
 }
 .stories-content .story{
     margin: 20px 10px;
+    max-width: 340px;
+    min-width: 280px;
 }
 .story.story-one{
     height: fit-content;
