@@ -87,6 +87,98 @@ body{
     transform: translateY(0px);
     opacity: 1;
 }
+
+.to-top{
+    height: 50px;
+    width: 50px;
+    -webkit-box-shadow: -4px 2px 12px #00000033,
+    -2px 2px 16px #00000033,
+    2px 2px 22px #00000033,
+    4px 2px 32px #00000033,
+    6px 2px 42px #00000033,
+    20px 2px 52px #00000033;
+    -moz-box-shadow: -4px 2px 12px #00000033,
+        -2px 2px 16px #00000033,
+        2px 2px 22px #00000033,
+        4px 2px 32px #00000033,
+        6px 2px 42px #00000033,
+        20px 2px 52px #00000033;
+    -o-shadow: -4px 2px 12px #00000033,
+        -2px 2px 16px #00000033,
+        2px 2px 22px #00000033,
+        4px 2px 32px #00000033,
+        6px 2px 42px #00000033,
+        20px 2px 52px #00000033;
+    box-shadow: -4px 2px 12px #00000033,
+        -2px 2px 16px #00000033,
+        2px 2px 22px #00000033,
+        4px 2px 32px #00000033,
+        6px 2px 42px #00000033,
+        20px 2px 52px #00000033;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    font-size: 20px;
+    background-color: #ffffff;
+    z-index: 20;
+    text-decoration: none;
+    visibility: hidden;
+    -moz-animation: bounce 2000ms infinite linear;
+    -o-animation: bounce 2000ms infinite linear;
+    -webkit-animation: bounce 2000ms infinite linear;
+    animation: bounce 2000ms infinite linear;
+}
+
+.to-top:hover{
+    animation: none;
+    -webkit-transition: all ease 2000ms;
+    -moz-transition: all ease 2000ms;
+    -ms-transition: all ease 2000ms;
+    -o-transition: all ease 2000ms;
+    transition: all ease 2000ms;
+}
+.to-top i{
+    color: var(-);
+    pointer-events: none;
+}
+.to-top.show{
+    visibility: visible;
+}
+@-webkit-keyframes bounce {
+    0% { bottom: 40px; }
+    50% { bottom: 30px; }
+    70% { bottom: 35px; }
+    100% { bottom: 40px; }
+}
+@-moz-keyframes bounce {
+    0% { bottom: 40px; }
+    50% { bottom: 30px; }
+    70% { bottom: 35px; }
+    100% { bottom: 40px; }
+}
+@-o-keyframes bounce {
+    0% { bottom: 40px; }
+    50% { bottom: 30px; }
+    70% { bottom: 35px; }
+    100% { bottom: 40px; }
+}
+@-ms-keyframes bounce {
+    0% { bottom: 40px; }
+    50% { bottom: 30px; }
+    70% { bottom: 35px; }
+    100% { bottom: 40px; }
+}
+@keyframes bounce {
+    0% { bottom: 40px; }
+    50% { bottom: 30px; }
+    70% { bottom: 35px; }
+    100% { bottom: 40px; }
+}
+
 /* == || SCROLL BAR == */
 .container{
     margin: auto;
@@ -97,10 +189,13 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: absolute;
+    position: fixed;
     top: 0;
     z-index: 16;
 }
+nav.sticky .right a{
+    color: #231F20;
+} 
 nav .left{
     background-color: #ffffff;
     display: flex;
@@ -158,6 +253,8 @@ nav .right button i{
 main{
     height: fit-content;
     width: 100%;
+    position: relative;
+    z-index: 0;
 }
 .menu-links{
     position: fixed;
@@ -327,9 +424,14 @@ main{
     color: #ffffff;
     outline: none;
 }
+section{
+    overflow: hidden;
+}
 section.projects{
     background-color: #231F20;
     padding: 20px 0px 10px;
+    position: relative;
+    z-index: -2;
 }
 section.projects img{
     width: 100% !important;
@@ -443,7 +545,7 @@ section.team{
     width: 100%;
 }
 .team-container{
-    padding: 40px 0px 60px;
+    padding: 40px 0px 10px;
 }
 .team-head{
     padding: 20px;
@@ -495,6 +597,7 @@ section.team{
     color: #231F20;
     font-family: Gotham-Book;
     padding: 10px 0px;
+    min-height: 180px;
 }
 .member-info a:nth-child(4){
     text-align: justify;
@@ -581,7 +684,7 @@ footer .footer-links{
 }
 .footer-copyright{
     background-color: #231F20;
-    padding: 28px;
+    padding: 28Sustainable Fashion: px;
 }
 .footer-copyright p{
     font-family: Gotham-Book;
@@ -653,7 +756,7 @@ section.branding img{
 }
 .branding-container .left{
     height: fit-content;
-    min-height: 400px;
+    min-height: 300px;
     padding: 20px 0px;
 }
 .branding-container .left h1{
@@ -827,11 +930,12 @@ section.branding img{
 .blog-container{
     height: fit-content;
     position: relative;
+    z-index: 0;
 }
 .blog-container img.stars{
     position: absolute;
     bottom: -32px;
-    left: -60px;
+    left: -100px;
     width: 200px !important;
 }
 .blogs{
@@ -843,6 +947,13 @@ section.branding img{
     align-items: flex-start;
     justify-content: space-evenly;
     flex-wrap: wrap;
+}
+.blogs-content .blog-link{
+    display: block;
+}
+.blog{
+    position: relative;
+    z-index: 0;
 }
 .blog.blog-one{
     height: fit-content;
@@ -1029,6 +1140,8 @@ main.blog-content .banner{
 }
 .stories-content .story{
     margin: 20px 10px;
+    max-width: 340px;
+    min-width: 280px;
 }
 .story.story-one{
     height: fit-content;
@@ -1142,6 +1255,7 @@ main.blog-content .banner{
     .team-head h1{
         font-size: 28px !important;
         line-height: 36px !important;
+        text-align: center !important;
     }
     .services-container .row .column p{
         font-size: 40px !important;
@@ -1200,7 +1314,7 @@ main.blog-content .banner{
         font-size: 30px;
     }
     .banner-text-container{
-        padding: 220px 15px 20px;
+        padding: 200px 15px 20px;
     }
     .banner-image .image-mask{
         /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f7941e+20,f7941e+100&1+20,0.89+40,0.55+60,0.89+80,1+100 */
@@ -1243,9 +1357,26 @@ main.blog-content .banner{
         font-size: 54px;
         line-height: 50px;
     }
+    .branding-container .left{
+        height: fit-content;
+        min-height: 220px;
+        padding: 20px 0px;
+    }
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */ 
 @media screen and (max-width: 767px){
+    nav.sticky{
+        -webkit-transition: all 500ms ease;
+        -moz-transition: all 500ms ease;
+        -ms-transition: all 500ms ease;
+        -o-transition: all 500ms ease;
+        transition: all 500ms ease;
+    }
+    nav.sticky .left{
+        -webkit-box-shadow: 6px 6px 24px #00000033;
+        -moz-box-shadow: 6px 6px 24px #00000033;
+        box-shadow: 6px 6px 24px #00000033;
+    }
     .banner-image{
         right: -120px !important;
         top: 0 !important;
@@ -1265,12 +1396,57 @@ main.blog-content .banner{
     .about-container .right button {
         margin: 20px auto 0px !important;
     }
+    .banner-text-container h1:nth-child(1){
+        font-size: 54px !important;
+        line-height: 60px !important;
+        font-weight: 500 !important;
+        text-align: center;
+    }
+    .banner-text-container p:nth-child(2){
+        font-family: Gotham-Book;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 22px;
+        color: #ffffff; 
+        width: 100%;
+        max-width: 690px;
+        margin: 4px 0px 0px;
+        margin-top: 20px;
+        text-align: center;
+    }
+    .projects-container .left h2{
+        font-family: Gotham-Book;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 42px;
+        line-height: 49px;
+        color: #FFFFFF;
+        margin: 0px 0px 40px;
+        text-align: center;
+    }
+    .text-sm{
+        text-align: center !important;
+
+    }
 }
 @media screen and (min-width: 767px){
     .banner-image{
         right: 0px !important;
         top: 0 !important;
     }
+    nav.sticky{
+        background-color: #ffffff;
+        -webkit-transition: all 500ms ease;
+        -moz-transition: all 500ms ease;
+        -ms-transition: all 500ms ease;
+        -o-transition: all 500ms ease;
+        transition: all 500ms ease;
+        -webkit-box-shadow: 6px 6px 24px #00000033;
+        -moz-box-shadow: 6px 6px 24px #00000033;
+        box-shadow: 6px 6px 24px #00000033;
+    }
+
     section.banner.about .banner-image{
         right: 0 !important;
         top: 0 !important;
@@ -1508,5 +1684,8 @@ main.blog-content .banner{
         padding: 20.5px 11px;
     }
 }
-@media screen and (max-width: 999px) and (min-width: 768px){
+
+.nothing{
+    text-color: #4fa21f;
+    hover-color: #00bc00;
 }
