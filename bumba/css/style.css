@@ -449,6 +449,11 @@ section.projects img{
 .projects-container .right{
     margin: 20px 20px;
 }
+.projects-container .right img{
+    max-height: 600px;
+    object-fit: contain;
+    width: 100%;
+}
 .projects-container .left h2{
     font-family: Gotham-Book;
     font-style: normal;
@@ -1558,7 +1563,11 @@ main.blog-content .banner{
         height: 100%;
         width: 50% !important;
     }
-
+    .projects-container .right img{
+        max-height: 350px;
+        object-fit: contain;
+        width: 100%;
+    }
     .menu-links .image{
         width: 10%;
     }
